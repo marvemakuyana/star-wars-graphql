@@ -1,13 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { ApolloProvider } from '@apollo/client/react';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+
+import store from './store'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+const client = new ApolloClient({
+  uri: 'https://dvlks.sse.codesandbox.io/',
+  cache: new InMemoryCache()
+})
+
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <ApolloProvider client={client}>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </ApolloProvider>
+  </Provider>,
   document.getElementById('root')
 );
 
