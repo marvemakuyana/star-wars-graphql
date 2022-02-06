@@ -10,9 +10,7 @@ GraphQL API has a Query type that resolves(searches for) a particular Person (Pe
 
 # Setting up
 
-1 git clone [this repo] [prefferedFolderName] 
-
-2 cd [prefferedFolderName]
+1 git clone https://github.com/marvemakuyana/star-wars-graphql.git 
 
 3 npm install
 
