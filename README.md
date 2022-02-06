@@ -14,11 +14,11 @@ GraphQL API has a Query type that resolves(searches for) a particular Person (Pe
 
 2 cd [prefferedFolderName]
 
-4 npm install
+3 npm install
 
-5 cd client
+4 cd client
 
-6 npm install
+5 npm install
 
 # Running the app
 
